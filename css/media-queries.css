@@ -1,0 +1,1269 @@
+@media (min-width: 100px){
+    /* General */
+    .custom-w{
+        width: 160px;
+        display: block;
+    }
+    /* #General */
+    
+    /* Header */
+    header .header-wrapper .main-logo{
+        margin-left: 0;
+    }
+    /* #Header */
+}
+@media (max-width: 1770px){
+    #calendarModal{
+        display: inline-block;
+    }
+    #calendarCol{
+        width: 0;
+    }
+    #eventCol{
+        width: 100%;
+    }
+    #eventArea{
+        display: block!important;
+        width: 50%;
+    }
+    .events-section .col-md-5{
+        width: 50%;
+    }
+    .dropdown-button{
+        padding-inline: 15px;
+    }
+    .event-content{
+        max-height: 450px;
+        height: 450px;
+    }
+    .event-content.single-event{
+        padding-top: 0;
+    }
+    .event-content.single-event .event-bg img{
+        object-fit: cover;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .event-content.single-event .event-title{
+        margin-bottom: 10px;
+    }
+    .event-content.single-event .event-all-btn{
+        margin-top: 15px;
+    }
+    .event-content-wrapper{
+        padding-top: 20px;
+        height: 535px;
+    }
+    .event-content-wrapper .btn-classic{
+        margin-bottom: 20px;
+    }
+    .calendar-container{
+        position: fixed;
+        width: 430px;
+        height: 100%;
+        max-height: 400px;
+        padding: 15px;
+        left: 37%;
+        top: 33%;
+        border-radius: 16px;
+    }
+    .calendar-container::before{
+        content: '';
+        width: 1920px;
+        height: 1920px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+        position: fixed;
+        z-index: 800;
+    }
+    .calendar-container::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #FFF;
+        position: absolute;
+        z-index: 800;
+        border-radius: 16px;
+    }
+    .calendar-container .calendar-header,
+    .calendar-body{
+        position: relative;
+        z-index: 1000;
+    }
+    .calendar-body::before{
+        content: '';
+        background-color: #FFF;
+        width: 430px;
+        height: 100%;
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        border-radius: 16px;
+    }
+    #calendar{
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2000;
+    }
+    #calendar.is-active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1680px){
+    header nav{
+        gap: 25px;
+    }
+    .catalogs .box{
+        flex: 1 1 20%;
+        flex-direction: row;
+        padding: 10px 0 10px 35px;
+        justify-content: flex-start;
+    }
+    .catalogs .box .box-icon svg{
+        width: 35px;
+    }
+    .welcome-section::before{
+        right: -70px;
+    }
+    .bottom-section h1{
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+    .bottom-section p.desc{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1600px){
+    /* General */
+    h1 {
+        font-size: 86px;
+    }
+    h2{
+        font-size: 48px;
+    }
+    .adaylar .ibb-box .box-title h3,
+    .adaylar .box .box-title h3{
+        font-size: 24px;
+    }
+    .nav-tabs{
+        margin-bottom: 40px;
+    }
+    .nav-tabs .nav-link,
+    .h2{
+        font-size: 34px;
+    }
+    .adaylar-section::before{
+        left: 0;
+    }
+    .large-section .container.padding-right-reset{
+        padding-left: 58px;
+    }
+    /* #General */
+
+    /* Anasayfa - Welcome Section */
+    .welcome-section{
+        height: 700px;
+    }
+    .welcome-section::before{
+        width: 540px;
+        height: 700px;
+    }
+    /* #Anasayfa - Welcome Section */
+}
+
+@media (max-width: 1500px){
+    /* General */
+    .btn-classic{
+        padding: 10px 20px;
+    }
+    /* #General */
+
+    /* Header */
+    header .top-bar .container{
+        padding-left: 160px;
+    }
+    header .header-wrapper .main-logo{
+        margin-left: 0;
+    }
+    header .header-wrapper .logo-wrapper{
+        gap: 25px!important;
+    }
+    header nav{
+        gap: 20px;
+    }
+    /* #Header */
+    .catalogs .box{
+        padding: 10px 0 10px 25px;
+    }
+    .catalogs .box .box-icon svg{
+        width: 30px;
+    }
+    .adaylar .box .box-img img{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1440px){
+    /* General */
+    section:not(:first-child){
+        padding-block: 25px;
+    }
+    .bottom-section{
+        margin-top: 75px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    a,
+    .catalogs .box .box-title,
+    p.desc,
+    p,
+    .listing-section .projeler-wrapper .box .category-box .category-text,
+    .btn-classic.filter-btn,
+    .event-content .event-title{
+        font-size: 16px!important;
+    }
+    .event-content .event-detail span{
+        font-size: 14px;
+    }
+    .event-content .event-detail{
+        gap: 5px;
+    }
+    .h2::after{
+        margin: 0 7px;
+    }
+    .carousel-buttons{
+        margin-left: 20px;
+    }
+    .events-section .banner{
+        height: 210px;
+    }
+    .events-section .banner .banner-img{
+        width: 190px;
+    }
+    .events-section .banner.banner-yellow .banner-img{
+        width: 250px;
+        height: 290px;
+    }
+    .events-section .banner.banner-yellow .banner-img img{
+        bottom: -40px;
+        left: -10px;
+    }
+    .event-content-wrapper{
+        height: 455px;
+    }
+    .event-content.single-event .event-bg img{
+        height: 200px;
+    }
+    .event-content{
+        max-height: 373px;
+        height: 373px;
+    }
+    .event-content.multiple-event .event-list{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 1400px){
+    .container.welcome-container{
+        padding-left: 150px!important;
+        padding-right: 150px!important;
+    }
+    .bottom-section p.desc{
+        padding-inline: 0;
+    }
+}
+
+@media (max-width: 1366px){
+    header .header-wrapper .logo-wrapper img{
+        width: 120px;
+        height: 120px;
+    }
+    header .header-wrapper{
+        height: 80px;
+    }
+    header .buttons-wrapper{
+        gap: 5px;
+    }
+    header .header-wrapper .logo-wrapper{
+        gap: 20px!important;
+    }
+    header nav{
+        gap: 15px;
+    }
+    .slider{
+        margin-top: -20px;
+    }
+    .catalogs .box{
+        padding: 10px 0 10px 15px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        padding-left: 220px!important;
+        padding-right: 220px!important;
+    }
+    .container.large-container{
+        padding-left: 80px!important;
+        padding-right: 80px!important;
+    }
+    .container.padding-right-reset{
+        padding-right: 0!important;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .social-media-icons img{
+        width: 15px!important;
+        height: 15px!important;
+    }
+    .nav-tabs{
+        margin-bottom: 20px;
+    }
+    .nav-tabs .nav-link,
+    .h2{
+        font-size: 30px;
+    }
+    .large-section .container.padding-right-reset{
+        padding-left: 83px;
+    }
+    .welcome-section .welcome-container{
+        padding-top: 180px;
+    }
+    .welcome-section{
+        height: 600px;
+    }
+    .welcome-section::before{
+        width: 460px;
+        height: 600px;
+    }
+    .catalogs .box{
+        padding: 10px 0 10px 25px;
+    }
+    .catalogs .box .box-icon svg{
+        width: 30px;
+    }
+    .bottom-section p.desc span{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1200px){
+    .calendar-container{
+        left: 35%;
+    }
+}
+
+@media (max-width: 1199px){
+    .container{
+        padding-left: 170px!important;
+        padding-right: 170px!important;
+    }
+    .container.large-container{
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+    .slider .social-media-wrapper{
+        width: 264px;
+        gap: 20px;
+    }
+    header .header-wrapper .logo-wrapper{
+        gap: 15px!important;
+    }
+    
+    .welcome-section::before{
+        right: -50px;
+    }
+
+    .adaylar .box{
+        width: auto;
+    }
+    .adaylar .box .box-img img{
+        margin-top: 15px;
+        object-fit: contain;
+        height: 270px;
+        right: 0;
+        position: relative;
+    }
+}
+
+@media (max-width: 1080px){
+    .calendar-container{
+        left: 30%;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        padding-left: 80px!important;
+        padding-right: 80px!important;
+    }
+    h1{
+        font-size: 60px!important;
+    }
+    #menuBtn{
+        position: relative;
+        z-index: 1000;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -15px;
+    }
+    #menuBtn.blackMenuBtn .ham .line{
+        stroke: #06337A;
+    }
+    #header{
+        display: none;
+    }
+    #headerMobile{
+        display: block;
+        background-color: transparent;
+        padding-block: 10px;
+    }
+    #navbarMobile{
+        position: absolute;
+        z-index: 10;
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20px;
+        overflow: hidden;
+        flex-direction: column;
+        font-size: 18px;
+        height: 100vh;
+        justify-content: center;
+        width: 100%;
+        display: flex!important;
+    }
+    #navbarMobile::before{
+        content: '';
+        position: absolute;
+        width: 1900px;
+        height: 1900px;
+        background-color: #002259;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    #navbarMobile .nav-item{
+        color: #FFF;
+        font-size: 20px!important;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    #navbarMobile .nav-item:last-child{
+        margin-bottom: 0;
+    }
+    #navbarMobile .buttons-wrapper{
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 300px;
+    }
+    #navbarMobile .btn-classic{
+        margin-bottom: 20px;
+        width: 170px;
+        text-align: center;
+        padding: 12px 15px;
+    }
+    #navbarMobile .btn-classic:last-child{
+        margin-bottom: 0;
+    }
+    #navbarMobile .social-media-wrapper{
+        position: relative;
+        top: 70px;
+        gap: 25px;
+        left: 20px;
+    }
+    #headerMobile .container{
+        padding-inline: 30px;
+        position: relative;
+        height: 130px;
+    }
+    #headerMobile .container > div:first-child{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #headerMobile .container img{
+        width: 130px;
+        height: 130px;
+    }
+    #headerMobile .container .akparti-img{
+        width: 110px;
+        height: 110px;
+    }
+    #navbarMobile .btn-classic.orange-btn{
+        width: 290px;
+        margin-left: -90px;
+    }
+    #navbarMobile .btn-classic.light-blue-btn{
+        width: 250px;
+        margin-left: -82px;
+    }
+    .slider{
+        height: 100vh!important;
+        margin-top: 0;
+    }
+    .slider .content-wrapper{
+        height: 100%;
+    }
+    .sliderDesc{
+        display: none!important;
+    }
+    .sliderTablet{
+        display: block!important;
+    }
+    .slider .social-media-wrapper{
+        display: none!important;
+    }
+    .slider .slider-footer .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .slider-catalogs-container{
+        margin-top: 475px;
+    }
+    .welcome-section .welcome-container{
+        padding-left: 80px!important;
+        padding-right: 80px!important;
+        padding-block: 25px;
+    }
+    .slider .slider-footer{
+        margin-top: 50px;
+    }
+    .slider .custom-dots{
+        width: auto;
+    }
+    .welcome-section{
+        height: auto;
+        margin-top: 0;
+    }
+    .slider .custom-dots .custom-dot{
+        width: 20px;
+        height: 5px;
+    }
+    .slider .custom-dots .custom-dot.active{
+        width: 30px;
+        height: 5px;
+    }
+    .welcome-section::before{
+        content: none;
+    }
+    .welcome-section .col-md-12.col-lg-8{
+        width: 100%!important;
+        text-align: center!important;
+    }
+    .nav-tabs{
+        justify-content: center;
+    }
+    footer .marti{
+        display: none;
+    }
+    .in-page .in-page-content .wrapper{
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 991px){
+    /* General */
+    .adaylar-section .top-area{
+        flex-direction: column;
+    }
+    .adaylar-section .top-area .filter-area{
+        flex-direction: column;
+    }
+    .adaylar-section .carousel-buttons{
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .h2::after{
+        margin: 0 12px;
+    }
+    .large-section .container.padding-right-reset{
+        /* padding-left: 120px; */
+        padding-left: 30px;
+    }
+    .adaylar .ibb-box .box-title h3, .adaylar .box .box-title h3{
+        font-size: 22px;
+    }
+    .adaylar .owl-carousel .owl-stage-outer{
+        padding-block: 20px;
+    }
+    .adaylar .ibb-box{
+        margin-top: 20px;
+    }
+    /* #General */
+    /* Anasayfa - Welcome Section */
+    .welcome-section .section-top-bg{
+        top: 50px;
+    }
+    .btn-m-top{
+        margin-top: 20px;
+    }
+    /* #Anasayfa - Welcome Section */
+
+    .adaylar .ibb-box{
+        margin-right: 10px;
+    }
+
+    .projeler-section .carousel-buttons#carouselBtnDesk{
+        display: none!important;
+    }
+    .projeler-section  .carousel-buttons#carouselBtnMobile{
+        display: flex!important;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .carousel-buttons#carouselBtnMobile{
+        gap: 5px;
+    }
+    .listing-section .catalogs{
+        margin-bottom: 15px;
+    }
+    .listing-section .carousel-buttons{
+        margin-left: 0;
+    }
+    .listing-section .filter-btn:first-child{
+        margin-right: 5px;
+        padding-inline: 20px;
+    }
+    footer .footer-links{
+        width: 100%;
+        gap: 0;
+        justify-content: space-between!important;
+    }
+    .events-section .banner .banner-content h4{
+        font-size: 18px;
+    }
+    .events-section .banner .banner-img{
+        width: 160px;
+    }
+    .events-section .banner.banner-yellow .banner-img{
+        width: 220px;
+    }
+    .event-content.empty-event .icon-wrapper img{
+        width: 50px;
+    }
+    .events-section .banner .banner-content{
+        padding-right: 15px;
+    }
+    .event-content.multiple-event::-webkit-scrollbar{
+        width: 8px;
+    }
+    .carousel-buttons.ms-3{
+        margin-left: 5px!important;
+    }
+    .next-carousel-btn, .prev-carousel-btn{
+        width: 44px;
+        height: 44px;
+    }
+}
+
+
+@media (max-width: 990px){
+    .in-page .adaylar .ibb-box, .in-page .adaylar .box{
+        width: 200px;
+        height: 350px;
+        padding-top: 15px;
+    }
+    .in-page .adaylar .box .box-img img{
+        margin-top: 0;
+        height: 220px;
+    }
+    .in-page .adaylar .ibb-box:hover,
+    .in-page .adaylar .box:hover{
+        padding-top: 25px;
+    }
+    .in-page .adaylar .ibb-box:hover .box-img img,
+    .in-page .adaylar .box:hover .box-img img{
+        transform: translateY(40px) scale(1.15);
+    }
+}
+
+@media (max-width: 950px){
+    .in-page .adaylar .ibb-box, .in-page .adaylar .box{
+        width: auto!important;
+    }
+    .col{
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 900px){
+    .slider-catalogs-container{
+        margin-top: 440px;
+    }
+    .slider .slider-footer{
+        margin-top: 50px;
+    }
+    .catalogs .box{
+        flex: 1 1 25%;
+    }
+}
+
+@media (max-width: 768px){
+    .adaylar .ibb-box{
+        width: 220px;
+    }
+    .adaylar .ibb-box .box-img{
+        margin-top: 5px;
+    }
+    .bottom-section h1::before{
+        top: -60px;
+    }
+    #calendarModal{
+        width: 290px;
+        display: block!important;
+        text-align: center;
+    }
+    .event-content .next-carousel-btn{
+        display: none;
+    }
+    .event-content .event-title{
+        text-align: center;
+    }
+    .event-content .event-date,
+    .event-content .event-date-info{
+        justify-content: center;
+    }
+    .event-content .event-detail{
+        width: auto;
+    }
+    .event-content .event-date{
+        gap: 15px;
+        row-gap: 4px;
+    }
+    .calendar-container{
+        left: 23%;
+    }
+}
+
+@media (max-width: 767px){
+    .sliderTablet{
+        display: none!important;
+    }
+    .sliderMobile{
+        display: block!important;
+    }
+    .slider-catalogs-container{
+        margin-top: 350px;
+    }
+    .slider .slider-footer .container{
+        gap: 50px;
+    }
+    .carouselBottom .scroll_down .mousey{
+        width: 11px;
+        height: 40px;
+    }
+    .top-area{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .catalogs .box{
+        flex: 1 1 45%;
+    }
+    /* Catalogs */
+    .catalogs{
+        justify-content: flex-start!important;
+    }
+    /* #Catalogs */
+    .events-section .container.large-container > .row{
+        gap: 40px;
+    }
+    #eventArea{
+        width: 100%;
+    }
+    .event-content-wrapper{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .events-section .col-md-5{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .events-section .banner.banner-yellow{
+        margin-top: 0;
+    }
+    .events-section .banner{
+        flex: 1 1 50%;
+    }
+    .event-content .event-list{
+        width: 300px;
+        margin-inline: auto;
+    }
+    .event-content.multiple-event .event-title{
+        margin-bottom: 10px;
+    }
+    .event-content.multiple-event .event-list{
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .calendar-title{
+        display: block;
+        font-size: 30px!important;
+    }
+
+    /* In-Page */
+    .in-page .baskan{
+        width: 300px;
+        margin-inline: auto;
+        margin-bottom: 30px;
+    }
+    .mb-30{
+        margin-bottom: 10px!important;
+    }
+    .in-page .in-page-content .wrapper{
+        padding-top: 80px;
+    }
+    .events-section .col-md-5{
+        flex-direction: column;
+    }
+    .events-section .banner{
+        flex: auto;
+        width: 100%;
+        height: 190px;
+    }
+}
+
+@media (max-width: 600px){
+    .calendar-container{
+        left: 13%;
+    }
+    .in-page .adaylar .ibb-box, .in-page .adaylar .box{
+        height: 300px;
+    }
+    .in-page .adaylar .box .box-img img{
+        height: auto;
+    }
+}
+
+@media (max-width: 575px){
+    .top-area{
+        margin-bottom: 30px;
+    }
+    .container{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .container.large-container{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .container.padding-right-reset{
+        padding-right: 0!important;
+    }
+    .projeler-section .carousel-buttons#carouselBtnMobile{
+        margin-left: -15px;
+    }
+    .catalogs .box{
+        padding: 10px 0 10px 15px;
+    }
+    #stickyShare{
+        width: 45px;
+        height: 140px;
+    }
+    #stickyShare .sticky-share-bg img{
+        margin-bottom: -40px;
+        width: 15px;
+    }
+    #stickyShare .sticky-share-bg span{
+        font-size: 14px;
+    }
+    #stickyShare .sticky-share-bg::before{
+        height: 360px;
+    }
+    /* General */
+    h1{
+        font-size: 54px!important;
+    }
+    h2{
+        font-size: 36px;
+    }
+    #carouselBtnDesk,
+    #deskBtn,
+    #carouselBtnDesk2{
+        display: none!important;
+    }
+    #carouselBtnMobile{
+        display: flex!important;
+        margin-top: 15px;
+    }
+    #carouselBtnMobile2{
+        display: flex!important;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .projeler-section #carouselBtnMobile2{
+        margin-left: -15px;
+    }
+    .top-area{
+        margin-bottom: 20px;
+    }
+    .filter-area{
+        flex-direction: column;
+    }
+    .filter-area > .haberler-filter{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .filter-area .carousel-buttons{
+        margin-left: 0!important;
+    }
+    .prev-carousel-btn{
+        margin-right: 0;
+    }
+    .btn-classic.filter-btn{
+        margin-inline: 8px;
+    }
+    .adaylar .ibb-box .box-title h3, .adaylar .box .box-title h3{
+        font-size: 18px;
+    }
+    .adaylar .owl-carousel .owl-stage{
+        height: auto;
+    }
+    .adaylar .owl-carousel .owl-stage-outer{
+        padding-block: 15px;
+    }
+    .adaylar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .adaylar .ibb-box{
+        margin-top: 15px;
+        padding-top: 15px;
+        width: 200px;
+    }
+    .adaylar .box{
+        width: auto;
+        padding-top: 15px;
+        box-shadow: 0px 0px 24px 0px rgba(217, 217, 217, 0.20);
+    }
+    .adaylar .ibb-box:hover,
+    .adaylar .box:hover{
+        padding-top: 30px;
+    }
+    .adaylar .ibb-box:hover .box-img img,
+    .adaylar .box:hover .box-img img{
+        transform: translateY(20px) scale(1.15);
+    }
+    .adaylar-section.large-section .container.padding-right-reset{
+        padding-left: 0!important;
+    }
+    .adaylar .ibb-box,
+    .adaylar .box{
+        height: 320px;
+    }
+    .adaylar-section .owl-carousel .owl-item{
+        opacity: 1;
+    }
+    .adaylar .box{
+        width: auto!important;
+    }
+    /* #General */
+    
+    /* Header */
+    #headerMobile .container .akparti-img,
+    #headerMobile .container img{
+        width: 110px;
+        height: 110px;
+    }
+    /* #Header */
+    
+    .welcome-section .welcome-container{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .nav-tabs .nav-link,
+    .h2{
+        font-size: 22px;
+    }
+    .nav-tabs .nav-item:first-child::after{
+        margin: 0 5px;
+        font-size: 24px;
+    }
+    /* #Anasayfa - Welcome Section */
+
+    .adaylar .ibb-box,
+    .adaylar .box{
+        width: 230px;
+        height: 400px;
+    }
+    .listing-section .projeler-wrapper .box .box-img{
+        height: 400px;
+    }
+    .listing-section .projeler-wrapper .box .box-content{
+        padding-inline: 20px;
+    }
+    .listing-section .projeler-wrapper .box .category-box{
+        width: 90px;
+        padding: 20px 0;
+    }
+    .large-section .container.padding-right-reset{
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .bottom-section p.desc span{
+        font-size: 18px;
+    }
+    footer .footer-links{
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+    }
+    footer .footer-links a{
+        flex: 1 1 25%;
+    }
+    footer .logo-wrapper{
+        width: 110px;
+        height: 110px;
+        margin-block: 30px;
+    }
+    footer .logo-wrapper img{
+        width: 100%;
+    }
+    .section-top-bg img{
+        width: 575px;
+    }
+    .events-section .banner.banner-yellow .banner-img{
+        width: 220px;
+        height: 240px;
+    }
+    .events-section .banner.banner-yellow .banner-img img{
+        bottom: -30px;
+    }
+    /* In-Page */
+    .in-page .baskan-bilgileri{
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center!important;
+        gap: 100px;
+        text-align: center;
+    }
+    .in-page h1{
+        text-align: center!important;
+    }
+    .in-page footer{
+        margin-top: 120px;
+    }
+    .font-20{
+        font-size: 18px!important;
+    }
+
+    .in-page .filter-area{
+        flex-direction: row;
+    }
+    .in-page .adaylar{
+        flex-direction: row;
+    }
+    .in-page .adaylar .box{
+        box-shadow: 0px 4px 54px 0px rgba(217, 217, 217, 0.30);
+    }
+}
+
+@media (max-width: 540px){
+    .adaylar .ibb-box,
+    .adaylar .box{
+        width: 200px;
+        height: 380px;
+    }
+    .listing-section .projeler-wrapper .box .box-img{
+        height: 380px;
+    }
+    .calendar-container,
+    .calendar-body::before{
+        width: 360px;
+    }
+    .calendar-body .calendar-dates li{
+        width: 47px;
+        height: 47px;
+    }
+    .in-page .col{
+        flex: 1 0 35%;
+    }
+    .in-page .adaylar .ibb-box, .in-page .adaylar .box{
+        height: 330px;
+    }
+}
+
+@media (max-width: 480px){
+    /* General */
+    a,
+    .catalogs .box .box-title,
+    p.desc,
+    p,
+    .listing-section .projeler-wrapper .box .category-box .category-text,
+    .btn-classic.filter-btn,
+    .event-content .event-title{
+        font-size: 15px!important;
+    }
+    .listing-section .projeler-wrapper .box .box-content{
+        padding-inline: 10px;
+    }
+    .listing-section .projeler-wrapper .box .box-content .next-carousel-btn{
+        width: 42px;
+        height: 42px;
+    }
+    h1{
+        font-size: 48px!important;
+    }
+    h2{
+        font-size: 34px;
+    }
+    .nav-tabs{
+        margin-bottom: 15px;
+    }
+    
+    .listing-section .projeler-wrapper .box .box-img{
+        height: 320px;
+    }
+    .listing-section .projeler-wrapper .box .box-img .profile-img{
+        width: 65px;
+        height: 65px;
+    }
+    .listing-section .projeler-wrapper .box .category-box{
+        width: 80px;
+        padding: 15px 0;
+    }
+    .listing-section .projeler-wrapper .box .category-box .category-icon{
+        width: 30px;
+    }
+    .h2::after{
+        margin: 5px 3px;
+        font-size: 26px;
+    }
+    /* #General */
+    .projeler-section .carousel-buttons#carouselBtnMobile{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bottom-section p.desc{
+        margin-bottom: 15px;
+    }
+    .catalogs .box .total-catalog{
+        font-size: 10px;
+    }
+    .event-content .event-list{
+        width: auto;
+    }
+    #calendarModal{
+        width: 250px;
+        padding: 12px 20px;
+    }
+    .mb-50{
+        margin-bottom: 30px!important;
+    }
+}
+
+@media (max-width: 450px){
+    .calendar-container{
+        left: 8%;
+    }
+    #closeCalendar{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 425px){
+    a,
+    .catalogs .box .box-title,
+    p.desc,
+    p,
+    .listing-section .projeler-wrapper .box .category-box .category-text,
+    .btn-classic.filter-btn,
+    .event-content .event-title{
+        font-size: 14px!important;
+    }
+    .events-section .banner{
+        height: 170px;
+    }
+    .events-section .banner .banner-img{
+        width: 140px;
+    }
+    .events-section .banner.banner-yellow .banner-img{
+        width: 160px;
+        height: 220px;
+    }
+    .events-section .banner .banner-content h4{
+        font-size: 14px;
+    }
+    .events-section .banner.banner-yellow .banner-content h4 > br:first-child{
+        display: none;
+    }
+
+    .in-page .adaylar .ibb-box, .in-page .adaylar .box{
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    .calendar-container{
+        max-height: 370px;
+        left: 8%;
+    }
+    .calendar-container, .calendar-body::before{
+        width: 340px;
+    }
+    .calendar-body .calendar-dates li{
+        width: 43px;
+        height: 43px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 390px){
+    .calendar-container{
+        left: 7%;
+    }
+    .adaylar .box{
+        padding-top: 25px;
+    }
+    .adaylar .box:hover{
+        padding-top: 40px;
+    }
+    .adaylar .box:hover .box-img img{
+        transform: translateY(30px) scale(1.2);
+    }
+}
+
+@media (max-width: 375px){
+    .calendar-container{
+        left: 5%;
+    }
+    /* Header */
+    #headerMobile .container .akparti-img,
+    #headerMobile .container img,
+    footer .logo-wrapper,
+    footer .logo-img{
+        width: 110px;
+        height: 110px;
+    }
+    /* #Header */
+    
+    .nav-tabs .nav-link, .h2{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 280px){
+    .container.padding-right-reset{
+        padding-right: 0!important;
+    }
+}

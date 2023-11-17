@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cookie-manager{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    font-size: 13px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 9998;
+}
+.cookie-manager-bar{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 10px;
+    border-top: #303030;
+    background-color: #000;
+}
+.cookie-manager-bar p{
+    color: #FFF;
+    padding-right: 15px;
+    margin-bottom: 0;
+}
+.cookie-manager-buttons{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.cookie-manager-button{
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 8px 20px;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0 4px;
+    border-radius: 8px;
+    line-height: 1;
+    min-width: 90px;
+}
+.cookie-manager-button.primary{
+    background-color: #C12A19;
+    color: #FFF;
+}
+.cookie-manager-button:hover{
+    opacity: .75;
+}
+.cookie-manager-modal{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 30;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: none;
+}
+.cookie-manager-modal-wrapper{
+    border-radius: 8px;
+    background: #F9F9FA;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    max-width: 800px;
+    display: -webkit-flex;
+    display: flex;
+}
+.cookie-manager-modal-panel{
+    position: relative;
+    max-width: 255px;
+    -webkit-flex: 0 0 255px;
+    flex: 0 0 255px;
+    -ms-flex: 0 0 255px;
+    background: #FFF;
+    z-index: 10;
+    -webkit-box-shadow: 1px 0 5px -1px rgba(0,0,0,.15);
+    box-shadow: 1px 0 5px -1px rgba(0,0,0,.15);
+    padding: 20px;
+    text-align: left;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+}
+.cookie-manager-modal-panel h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.cookie-manager-tab-title{
+    background: #F9F9FA;
+    cursor: pointer;
+    padding: 13px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 5px 0;
+    border: 1px solid #F4F5F6;
+    line-height: 1;
+    -webkit-transition: all .15s;
+    transition: all .15s;
+}
+.cookie-manager-tab-title:hover{
+    background: #EDEEF1;
+}
+.cookie-manager-tab-title.is-active{
+    color: #FFF;
+    background: #C12A19;
+}
+.cookie-manager-modal-content{
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: -webkit-calc(100% - 295px);
+    flex-basis: calc(100% - 295px);
+    max-width: -webkit-calc(100% - 295px);
+    max-width: calc(100% - 295px);
+    -ms-flex: 0 0 calc(100% - 295px);
+    color: #000;
+}
+.cookie-manager-tab-content{
+    padding: 20px;
+    text-align: left;
+    min-height: 225px;
+    color: #000;
+}
+.cookie-manager-tab-item{
+    display: none;
+}
+.cookie-manager-tab-item .item-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.cookie-manager-tab-item .item-value{
+    margin: 15px 0;
+}
+.cookie-manager-tab-item .item-value .toggle-switch{
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 50px;
+    height: 27px;
+}
+.cookie-manager-tab-item .item-value .toggle-switch .toggle-slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #565656;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+.cookie-manager-tab-item .item-value .toggle-switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.cookie-manager-tab-item .item-value .toggle-switch .toggle-slider.disabled{
+    opacity: .35;
+}
+.cookie-manager-tab-item .item-value .toggle-switch input:checked+.toggle-slider.disabled{
+    background-color: #000;
+}
+.cookie-manager-tab-item .item-value .toggle-switch input:checked+.toggle-slider{
+    background-color: #36B37E!important;
+}
+.cookie-manager-tab-item .item-value .toggle-switch input:checked+.toggle-slider:before{
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+    left: 0;
+}
+.cookie-manager-tab-item .item-value .toggle-switch .toggle-slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 4px;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+.cookie-manager-tab-item .item-value .toggle-text{
+    position: relative;
+    left: 60px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    min-width: 200px;
+}
+.cookie-manager-modal-foot{
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #EDEEF1;
+    background: #F4F5F6;
+    border-bottom-right-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+}
+.cookie-manager-tab-button{
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 13px 22px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 8px;
+    border-radius: 12px;
+    line-height: 1;
+    color: #000;
+}
+.cookie-manager-tab-button.primary{
+    background-color: #C12A19;
+    color: #FFF;
+}
+.cookie-manager-modal-close{
+    position: absolute;
+    right: -22px;
+    top: -22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: #F4F5F6;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99;
+    -webkit-box-shadow: 1px 0 5px -1px rgba(0,0,0,.15);
+    box-shadow: 1px 0 5px -1px rgba(0,0,0,.15);
+}
+.icon{
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    line-height: 1;
+}
+.cookie-manager-modal-close .icon{
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.icon-close:before{
+    content: 'X';
+}
+.cookie-manager-modal-backdrop{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #000000b3;
+    height: 100%;
+}
