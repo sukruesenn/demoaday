@@ -160,7 +160,7 @@ $(document).ready(function() {
         items: 3,
         responsive:{
             0:{
-                items: 1.2,
+                items: 1,
                 margin: 20
             },
             481:{

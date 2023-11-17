@@ -15,6 +15,7 @@
 @media (max-width: 1770px){
     #calendarModal{
         display: inline-block;
+        margin-inline: 0;
     }
     #calendarCol{
         width: 0;
@@ -458,7 +459,7 @@
     }
     #navbarMobile .nav-item{
         color: #FFF;
-        font-size: 20px!important;
+        font-size: 18px!important;
         margin-bottom: 30px;
         margin-left: 20px;
     }
@@ -467,7 +468,7 @@
     }
     #navbarMobile .buttons-wrapper{
         margin-top: 50px;
-        margin-left: 20px;
+        margin-left: 25px;
         width: 300px;
     }
     #navbarMobile .btn-classic{
@@ -475,6 +476,7 @@
         width: 170px;
         text-align: center;
         padding: 12px 15px;
+        font-size: 18px!important;
     }
     #navbarMobile .btn-classic:last-child{
         margin-bottom: 0;
@@ -858,12 +860,12 @@
         margin-bottom: 30px;
     }
     .container{
-        padding-left: 15px!important;
-        padding-right: 15px!important;
+        padding-left: 40px!important;
+        padding-right: 40px!important;
     }
     .container.large-container{
-        padding-left: 15px!important;
-        padding-right: 15px!important;
+        padding-left: 40px!important;
+        padding-right: 40px!important;
     }
     .container.padding-right-reset{
         padding-right: 0!important;
@@ -988,12 +990,12 @@
     /* #Header */
     
     .welcome-section .welcome-container{
-        padding-left: 15px!important;
-        padding-right: 15px!important;
+        padding-left: 40px!important;
+        padding-right: 40px!important;
     }
     .nav-tabs .nav-link,
     .h2{
-        font-size: 22px;
+        font-size: 20px;
     }
     .nav-tabs .nav-item:first-child::after{
         margin: 0 5px;
@@ -1120,22 +1122,34 @@
         width: 42px;
         height: 42px;
     }
+    .haberler-section.listing-section .projeler-wrapper .box .box-content .next-carousel-btn{
+        position: relative;
+        top: 20px;
+    }
     h1{
-        font-size: 48px!important;
+        font-size: 38px!important;
     }
     h2{
-        font-size: 34px;
+        font-size: 30px;
     }
     .nav-tabs{
         margin-bottom: 15px;
     }
     
-    .listing-section .projeler-wrapper .box .box-img{
-        height: 320px;
+    .listing-section .projeler-wrapper .box .box-img,
+    .haberler-section.listing-section .projeler-wrapper .box .box-img{
+        height: 250px!important;
+    }
+    .haberler-section.listing-section .projeler-wrapper{
+        height: 100%;
+    }
+    .haberler-section.listing-section .projeler-wrapper .box:hover .box-content{
+        padding-top: 150px;
+        height: 290px;
     }
     .listing-section .projeler-wrapper .box .box-img .profile-img{
-        width: 65px;
-        height: 65px;
+        width: 58px;
+        height: 58px;
     }
     .listing-section .projeler-wrapper .box .category-box{
         width: 80px;
@@ -1156,6 +1170,12 @@
     .bottom-section p.desc{
         margin-bottom: 15px;
     }
+    .catalogs .box{
+        padding: 2px 0 2px 15px;
+    }
+    .catalogs .box .box-icon svg{
+        width: 25px;
+    }
     .catalogs .box .total-catalog{
         font-size: 10px;
     }
@@ -1168,6 +1188,67 @@
     }
     .mb-50{
         margin-bottom: 30px!important;
+    }
+    .carouselBottom .scroll_down .mousey{
+        width: 8px;
+        height: 35px;
+        border-width: 2px;
+    }
+    .slider-catalogs-container{
+        margin-top: 300px;
+    }
+    .slider .slider-footer{
+        margin-top: 40px;
+    }
+    .slider .slider-footer .container{
+        gap: 20px;
+    }
+    #headerMobile .container .akparti-img, #headerMobile .container img, footer .logo-wrapper, footer .logo-img{
+        width: 90px!important;
+        height: 90px!important;
+    }
+    .ham{
+        height: 45px;
+    }
+    .container.menuBtn-container{
+        top: 51px;
+    }
+    .adaylar-section .top-area{
+        gap: 5px;
+    }
+    .adaylar .ibb-box .box-img img,
+    .adaylar .box .box-img img{
+        margin-top: -40px;
+    }
+    .adaylar .ibb-box, .adaylar .box{
+        height: 280px;
+    }
+    .adaylar .ibb-box .box-img,
+    .adaylar .box .box-img{
+        pointer-events: none;
+    }
+    .adaylar .ibb-box:hover .box-img img,
+    .adaylar .box:hover .box-img img{
+        transform: translateY(50px) scale(1.15);
+        pointer-events: none;
+    }
+    .adaylar .ibb-box
+    .adaylar .box{
+        padding-top: 20px!important;
+    }
+    .adaylar .ibb-box:hover,
+    .adaylar .box:hover{
+        padding-top: 20px!important;
+    }
+    footer .footer-logo{
+        position: relative;
+        top: 30px;
+    }
+    .adaylar .ibb-box .box-title h3, .adaylar .box .box-title h3{
+        font-size: 16px;
+    }
+    .adaylar .ibb-box .box-content span{
+        font-size: 14px;
     }
 }
 
@@ -1232,33 +1313,17 @@
     .calendar-container{
         left: 7%;
     }
-    .adaylar .box{
-        padding-top: 25px;
+    .listing-section .projeler-wrapper .box .box-img, .haberler-section.listing-section .projeler-wrapper .box .box-img{
+        height: 210px!important;
     }
-    .adaylar .box:hover{
-        padding-top: 40px;
-    }
-    .adaylar .box:hover .box-img img{
-        transform: translateY(30px) scale(1.2);
+    .nav-tabs .nav-link, .h2{
+        font-size: 18px;
     }
 }
 
 @media (max-width: 375px){
     .calendar-container{
         left: 5%;
-    }
-    /* Header */
-    #headerMobile .container .akparti-img,
-    #headerMobile .container img,
-    footer .logo-wrapper,
-    footer .logo-img{
-        width: 110px;
-        height: 110px;
-    }
-    /* #Header */
-    
-    .nav-tabs .nav-link, .h2{
-        font-size: 20px;
     }
 }
 

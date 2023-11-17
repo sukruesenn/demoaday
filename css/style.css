@@ -1079,10 +1079,14 @@ header .container .logo-wrapper.logo-alt{
     margin-top: -100px;
     padding-block: 120px 20px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.haberler-section.listing-section .projeler-wrapper .box .box-content,
+.haberler-section.listing-section .projeler-wrapper .box .box-img .box-bg{
+    border-radius: 20px;
 }
 .listing-section .projeler-wrapper .box p.desc{
     color: var(--light-gray-2);
