@@ -1178,7 +1178,7 @@ header .container .logo-wrapper.logo-alt{
 }
 
 /* Box deaktif */
-.listing-section .catalogs .box.gray-color{
+/* .listing-section .catalogs .box.gray-color{
     border-color: var(--white-3);
 }
 .listing-section .catalogs .box.gray-color .box-title{
@@ -1187,30 +1187,32 @@ header .container .logo-wrapper.logo-alt{
 .listing-section .catalogs .box.gray-color svg,
 .listing-section .catalogs .box.gray-color svg path{
     fill: #DEE2E6;
-}
+} */
 
 /* Box active classı */
 .listing-section .catalogs .box.active{
     box-shadow: 0px 4px 54px 0px rgba(217, 217, 217, 0.50);
+    background-color: var(--dark-blue);
 }
 .listing-section .catalogs .box.active .box-title{
-    color: var(--blue-2);
+    color: var(--white);
 }
 .listing-section .catalogs .box.active svg,
 .listing-section .catalogs .box.active svg path{
-    fill: var(--blue-2);
+    fill: var(--white);
 }
 
 /* Box Hover */
 .listing-section .catalogs .box:hover{
     box-shadow: 0px 4px 54px 0px rgba(217, 217, 217, 0.50);
+    background-color: var(--dark-blue);
 }
 .listing-section .catalogs .box:hover .box-title{
-    color: var(--blue-2);
+    color: var(--white);
 }
 .listing-section .catalogs .box:hover svg,
 .listing-section .catalogs .box:hover svg path{
-    fill: var(--blue-2);
+    fill: var(--white);
 }
 .listing-section .owl-carousel .owl-item{
     animation: opacitySet .7s ease-in-out;
@@ -1807,7 +1809,13 @@ footer .logo-img{
 .container.padding-right-reset{
     padding-right: 0!important;
 }
-
+.category-carousel.owl-carousel .owl-stage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 30px;
+}
 
 
 /* In Page */

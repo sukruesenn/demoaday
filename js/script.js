@@ -5,7 +5,7 @@ function changeColor(clickedElement){
 
     allLinks.forEach(function(link){
         if (link !== clickedElement){
-            link.classList.add('gray-color');
+            link.classList.add('dark-blue-color');
             link.classList.remove('active');
         }
     });

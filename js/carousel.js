@@ -200,4 +200,57 @@ $(document).ready(function() {
         var filter = $item.data('owl-filter');
         owlHaberler.owlcarousel2_filter(filter);
     });
+
+
+
+    $('.category-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        dots: false,
+        center: true,
+        responsive:{
+            0:{
+                items: 2,
+            },
+            424:{
+                items: 2
+            },
+            575:{
+                items: 3,
+                margin: 20,
+                mouseDrag: true,
+                touchDrag: true
+            },
+            992:{
+                mouseDrag: true,
+                touchDrag: true,
+                margin: 20
+            },
+            1280:{
+                items: 6,
+                margin: 20,
+                center: true,
+                mouseDrag: true,
+                touchDrag: true
+            },
+            1681:{
+                items: 8,
+                center: false,
+                mouseDrag: false,
+                touchDrag: false
+            }
+        }
+    })
+
+    $('.category-carousel .owl-item').on('click', function() {
+        // Tıklanan öğeyi seç
+        var clickedItem = $(this);
+    
+        // Owl Carousel öğesini al
+        var categoryCarousel = $('.category-carousel').data('owl.carousel');
+    
+        // Tıklanan öğeyi ortala
+        categoryCarousel.to(clickedItem.index());
+    });
 });
