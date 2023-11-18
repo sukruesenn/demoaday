@@ -100,7 +100,7 @@
                         <img src="images/istanbul/istanbul-white.svg" alt="AK Parti">
                     </div>
                     <div class="wrapper projeler-section listing-section">
-                        <div class="container large-container bg-white catalog-filters">
+                        <div class="container large-container w-100 top-area-container bg-white catalog-filters">
                             <div class="top-area d-flex align-items-center justify-content-between">
                                 <div class="title">
                                     <h1>Ak Projeler</h1>
@@ -123,8 +123,8 @@
                                     <span class="btn-classic filter-btn catalog-filter catalogClear" data-filter="all">Tümü</span>
                                 </div>
                             </div>
-                            <div class="catalogs d-flex justify-content-between">
-                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter" data-filter="cevre">
+                            <div class="category-carousel owl-carousel owl-theme catalogs d-flex justify-content-between owl-filter-bar-projeler">
+                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter filter" data-filter="cevre" >
                                     <div class="total-catalog position-absolute">18</div>
                                     <div class="box-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none" class="catalog-icon">
@@ -135,7 +135,7 @@
                                         <span class="box-title">Çevre</span>
                                     </div>
                                 </a>
-                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter" data-filter="egitim">
+                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter filter" data-filter="egitim" >
                                     <div class="total-catalog position-absolute">68</div>
                                     <div class="box-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" class="catalog-icon">
@@ -150,7 +150,7 @@
                                         <span class="box-title">Eğitim</span>
                                     </div>
                                 </a>
-                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter" data-filter="all">
+                                <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative catalog-filter filter" data-filter="saglik" >
                                     <div class="total-catalog position-absolute">21</div>
                                     <div class="box-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none" class="catalog-icon">
@@ -189,7 +189,7 @@
                                     </div>
                                 </a>
                                 <a href="#hizmetler" onclick="changeColor(this);" class="box position-relative" data-filter="egitim">
-                                    <div class="total-catalog position-absolute">76</div>
+                                    <div class="total-catalog position-absolute">102</div>
                                     <div class="box-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="31" viewBox="0 0 40 31" fill="none" class="catalog-icon">
                                             <path d="M26.5015 0.869141C27.4904 1.24061 27.6666 1.49432 27.6658 2.54112C27.6658 8.5828 27.6688 14.6245 27.6568 20.6661C27.6568 20.9976 27.7565 21.1496 28.0722 21.2746C28.7462 21.5428 29.328 21.9608 29.8505 22.4544C31.0688 23.6045 32.7902 23.6037 33.9905 22.4334C34.9831 21.4658 36.1745 20.9431 37.5734 20.8406C38.3209 20.7861 38.9439 21.2622 39.0144 21.9572C39.0856 22.6551 38.5826 23.2817 37.8314 23.3231C36.9422 23.3718 36.2539 23.7404 35.6302 24.3307C33.4987 26.348 30.1976 26.2891 28.0362 24.218C27.0615 23.2832 25.7623 23.0658 24.6092 23.6459C24.3198 23.792 24.0709 23.9905 23.8392 24.2137C21.6425 26.3291 18.334 26.3327 16.1343 24.226C14.8673 23.0127 13.1729 23.0135 11.9163 24.2282C9.76237 26.3102 6.45084 26.332 4.26539 24.2631C3.68885 23.7171 3.03959 23.3857 2.22388 23.3311C1.42693 23.2781 0.857134 22.6391 0.942603 21.9608C1.03632 21.2143 1.66159 20.7592 2.49004 20.8341C3.84329 20.9555 5.00312 21.4701 5.96502 22.4094C7.18482 23.6001 8.90394 23.6067 10.1297 22.437C10.6778 21.9143 11.3008 21.4941 12.0138 21.2201C12.2845 21.1161 12.3467 20.9766 12.3467 20.7127C12.3392 14.6586 12.3407 8.60533 12.3407 2.5513C12.3407 1.47905 12.4936 1.25152 13.4818 0.869141H13.7809C14.6543 1.12793 14.9745 1.71095 14.907 2.57238C14.862 3.14885 14.916 3.73187 14.8912 4.31052C14.8778 4.62674 14.9512 4.74305 15.3103 4.73578C16.4807 4.71107 17.6525 4.72633 18.8236 4.72633C20.7923 4.72633 22.7604 4.71979 24.7291 4.7336C25.032 4.73578 25.1055 4.64564 25.0958 4.36795C25.0755 3.76458 25.0898 3.16048 25.0898 2.55712C25.0898 1.48414 25.2697 1.22753 26.2773 0.869868H26.5015V0.869141ZM19.9939 10.9417C21.5766 10.9417 23.1592 10.9374 24.7419 10.9468C24.9878 10.9483 25.092 10.9054 25.0875 10.635C25.071 9.59689 25.074 8.55735 25.086 7.51927C25.089 7.29246 25.0163 7.23649 24.7906 7.23649C21.5878 7.24303 18.3857 7.24303 15.1829 7.23649C14.9452 7.23649 14.892 7.31136 14.8942 7.52654C14.9047 8.55299 14.9085 9.57944 14.892 10.6059C14.8875 10.8785 14.967 10.9505 15.2459 10.9483C16.8285 10.9352 18.4112 10.9417 19.9939 10.9417ZM20.0299 13.4134C18.4232 13.4134 16.8158 13.4177 15.2091 13.4083C14.9707 13.4068 14.8897 13.4635 14.8927 13.7063C14.9062 14.7444 14.9055 15.7832 14.8927 16.8213C14.8897 17.0554 14.9557 17.1266 15.2031 17.1259C18.3925 17.1179 21.581 17.1186 24.7704 17.1259C25.0103 17.1259 25.089 17.0677 25.086 16.8264C25.0725 15.8007 25.0703 14.7742 25.0868 13.7478C25.0913 13.4788 25.0208 13.4039 24.7381 13.4061C23.169 13.4199 21.599 13.4126 20.0291 13.4126L20.0299 13.4134ZM20.0299 19.6099C20.0299 19.6041 20.0299 19.599 20.0299 19.5932C18.6721 19.5932 17.3144 19.5874 15.9566 19.5975C15.6132 19.6004 15.1454 19.4405 14.9602 19.6717C14.7885 19.8861 14.9175 20.3194 14.8957 20.6552C14.8823 20.8639 14.9565 20.9351 15.1739 20.9831C16.2168 21.2128 17.1172 21.7042 17.8797 22.4341C19.1294 23.6306 20.8133 23.6336 22.0669 22.437C22.6891 21.8431 23.4081 21.4069 24.2276 21.1161C24.5042 21.018 24.9121 21.0769 25.038 20.8421C25.1662 20.6029 25.0538 20.2511 25.0875 19.9523C25.1228 19.6382 24.9706 19.6033 24.7014 19.6048C23.1442 19.6143 21.587 19.6092 20.0299 19.6092V19.6099Z" fill="white"/>
@@ -235,6 +235,8 @@
                                     </div>
                                 </a>
                             </div>
+                        </div>
+                        <div class="container bg-white">
                             <div class="row projeler-wrapper filter-box-wrapper">
                                 <div class="col-sm-6 col-lg-4 project-box mb-50 filter-box" data-filter="cevre">
                                     <div class="box">

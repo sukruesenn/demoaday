@@ -665,7 +665,9 @@ footer .logo-wrapper{
 .container.menuBtn-container{
     top: 40px;
     z-index: 500;
-    padding-left: 30px!important;
+    padding-left: 40px!important;
+    left: 0;
+    width: 120px;
 }
 #headerMobile{
     display: none;
@@ -930,6 +932,31 @@ header .container .logo-wrapper.logo-alt{
 }
 .btn-m-top{
     margin-top: 30px;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInUp{
+    from{
+        transform: translate3d(0, 40px, 0)
+    }
+    to{
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
 }
 /* #Tabs */
 
@@ -1887,8 +1914,12 @@ footer .logo-img{
 }
 .in-page .adaylar .ibb-box{
     margin: 0;
+    box-shadow: 0px 4px 54px 0px rgba(217, 217, 217, 0.30);
 }
 .in-page .adaylar .ibb-box,
 .in-page .adaylar .box{
     width: 255px;
+}
+.adaylar .ibb-box:hover .box-img img{
+    transform: translateY(40px) scale(1.15);
 }
