@@ -634,14 +634,14 @@ footer .logo-wrapper{
 }
 
 .hide{
-    animation: hide .5s ease-in-out 0s 1 normal forwards;
+    animation: hide .2s ease-in-out 0s 1 normal forwards;
 }
 .show{
-    animation: show .5s ease-in-out 0s 1 normal forwards;    
+    animation: show .2s ease-in-out 0s 1 normal forwards;    
 }
 @keyframes hide{
     0%{
-        opacity: 1;        
+        opacity: 1;
     }
     100% {
         opacity: 0;
@@ -933,18 +933,22 @@ header .container .logo-wrapper.logo-alt{
 .btn-m-top{
     margin-top: 30px;
 }
-.animated {
-    animation-duration: 1s;
+.animated{
+    animation-duration: .5s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
 }
-
-.animatedFadeInUp {
-    opacity: 0
+.animated2{
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
 }
-
-.fadeInUp {
+.animatedFadeInUp{
+    opacity: 0;
+}
+.fadeInUp{
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
