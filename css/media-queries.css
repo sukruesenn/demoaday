@@ -490,9 +490,11 @@
         margin-bottom: 0;
     }
     #navbarMobile .buttons-wrapper{
-        margin-top: 50px;
+        margin-top: 80px;
         margin-left: 25px;
         width: 300px;
+        position: relative;
+        top: -30px;
     }
     #navbarMobile .btn-classic{
         margin-bottom: 20px;
@@ -506,7 +508,7 @@
     }
     #navbarMobile .social-media-wrapper{
         position: relative;
-        top: 70px;
+        top: 40px;
         gap: 25px;
         left: 20px;
     }
@@ -741,6 +743,10 @@
     }
     .in-page .adaylar .ibb-box, .in-page .adaylar .box{
         padding-top: 15px!important;
+    }
+    .in-page .listing-section .catalogs{
+        margin-bottom: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -1111,14 +1117,23 @@
         flex-direction: column;
         align-items: center!important;
         justify-content: center!important;
-        gap: 100px;
+        gap: 30px;
         text-align: center;
+    }
+    .in-page.baskandan .baskan-bilgileri .left{
+        order: 2;
+    }
+    .in-page.baskandan .mt-30{
+        margin-top: 80px!important;
+    }
+    .in-page.baskandan.il-baskanindan .mt-30{
+        margin-top: 30px!important;
     }
     .in-page h1{
         text-align: center!important;
     }
     .in-page footer{
-        margin-top: 120px;
+        margin-top: 60px;
     }
     .font-20{
         font-size: 18px!important;
@@ -1310,6 +1325,9 @@
     .in-page .adaylar .box:hover{
         padding-top: 15px!important;
     }
+    .listing-section .projeler-wrapper .box .box-img, .haberler-section.listing-section .projeler-wrapper .box .box-img{
+        height: 210px!important;
+    }
 }
 
 @media (max-width: 450px){
@@ -1378,9 +1396,6 @@
 @media (max-width: 390px){
     .calendar-container{
         left: 7%;
-    }
-    .listing-section .projeler-wrapper .box .box-img, .haberler-section.listing-section .projeler-wrapper .box .box-img{
-        height: 210px!important;
     }
     .nav-tabs .nav-link, .h2{
         font-size: 18px;
